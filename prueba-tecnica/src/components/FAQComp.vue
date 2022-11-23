@@ -57,7 +57,6 @@
 
 <script>
 export default {
-    props: ["FAQInfo"],
     data() {
         return {
             isOpen: 0,
