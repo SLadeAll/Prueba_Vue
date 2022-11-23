@@ -1,27 +1,31 @@
 <template>
-    <div class="temp ">
-        <h1 class="text-center">Features designed for you</h1>
-        <p class="text-center place"> We belive we have created the most efficient SaaS landing page
-            for your users. Landing page with features that will convince
-            you to use it for your SaaS business.</p>
-        <v-contnet>
+    <div class=" container  ">
+        <div class="center-all">
+            <h1 class="title is-1">Features designed for you</h1>
+            <p>________________________</p>
+        </div>
+        <br />
+        <div class="txt">
 
-        </v-contnet>
-        <v-container fluid class="grey lighten-5">
+            <p class=""> We belive we have created the most efficient SaaS landing page
+                for your users. Landing page with features that will convince
+                you to use it for your SaaS business.</p>
+        </div>
+        <div>
 
-            <v-row dense>
-                <v-col v-for="features in feat" :key="features.title" :cols="features.flex" xs="12" sm="12" md="4">
-                    <v-card class="pa-1">
-                        <img src="../assets/responsive-64.png" alt="icon"  />
-                        <h2 class="ma-1 ">{{ features.title }}</h2>
-                        <p>______________</p>
-                        <p v-bind:key="desc.id" v-for="desc in features.description">
+            <div class="columns is-multiline is-mobile">
+                <div class="column  is-4" v-for="features in feat" :key="features.title" :cols="features.flex">
+                    <div class="box">
+                        <img src="../assets/responsive-64.png" alt="icon" />
+                        <h2 class="title is-5">{{ features.title }}</h2>
+                        <br/>
+                        <p class="subtitle is-6" v-bind:key="desc.id" v-for="desc in features.description">
                             {{ desc }}
                         </p>
-                    </v-card>
-                </v-col>
-            </v-row>
-        </v-container>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </template>
@@ -90,21 +94,20 @@ export default {
 </script>
 
 <style>
-.temp {
-    padding-left: 15%;
-    padding-right: 15%;
+.center-all {
     align-items: center;
-    margin-bottom: 40px;
-    margin-top: 10px;
+    text-align: center;
+    margin-top: 15%;
 }
 
 .v-card {
     border: none;
 }
-.place{
+
+.txt {
     padding-left: 15%;
     padding-right: 15%;
-    margin: 30px;
+    margin-bottom: 5%;
 }
 </style>
 

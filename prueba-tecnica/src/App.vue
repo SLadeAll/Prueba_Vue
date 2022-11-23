@@ -1,15 +1,16 @@
 <template>
-  <v-app>
-    <v-main>
-      <SearchComp/>
-      <v-contnent>
-        <HomeComp/>
-        <Features/>
-        <TodosMain v-bind:tierList="copyTiers" />
-        <FAQComp v-bind:FAQInfo="FAQData"/>
-      </v-contnent>
-    </v-main>
-  </v-app>
+  <div >
+    <SearchComp/>
+    <div class="container">
+        <div>
+          <HomeComp/>
+          <Features/>
+          <TodosMain v-bind:tierList="copyTiers" />
+          <FAQComp v-bind:FAQInfo="FAQData"/>
+        </div>
+    </div>
+  </div>
+ 
 </template>
 
 <script>

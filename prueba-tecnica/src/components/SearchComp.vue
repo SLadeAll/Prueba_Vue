@@ -1,27 +1,60 @@
 <template>
-    <v-app-bar app color="rgb(138, 43, 226)" dark>
-      <v-toolbar-title>Prueba Vue</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn class="btn-space" color="white"><span>Login</span></v-btn>
-      <v-btn color="white"><span>Get Started</span></v-btn>
-    </v-app-bar>
-  </template>
-  
-  <script>
-  export default {
-    name: "SearchComp",
-    data: () => ({
-      //
-    }),
-  };
-  </script>
+  <b-navbar>
+    <template #start>
+      <b-navbar-item href="#">
+        Lateral
+      </b-navbar-item>
 
-  <style>
-  span{
-    color: rgb(138, 43, 226)
-  }
-  .btn-space{
-    margin-right: 5px;
-    margin-left: 5px;
-  }
+    </template>
+
+    <template #end>
+      <b-navbar-item href="#">
+        Home
+      </b-navbar-item>
+      <b-navbar-dropdown label="Features">
+        <b-navbar-item href="#">
+          About
+        </b-navbar-item>
+        <b-navbar-item href="#">
+          News
+        </b-navbar-item>
+      </b-navbar-dropdown>
+      <b-navbar-item href="#">
+        Pricing
+      </b-navbar-item>
+      <b-navbar-item href="#">
+        Contact
+      </b-navbar-item>
+      <b-navbar-item tag="div">
+        <div class="buttons">
+          <a class="button ">
+           <span> SIGN UP </span>
+          </a>
+          <a class="button ">
+            <span> GET STARTED </span> 
+          </a>
+        </div>
+      </b-navbar-item>
+    </template>
+  </b-navbar>
+</template>
+  
+<script>
+export default {
+  name: "SearchComp",
+  data: () => ({
+    //
+  }),
+};
+</script>
+
+<style>
+span {
+  color: rgb(138, 43, 226)
+}
+
+.btn-space {
+  margin-right: 5px;
+  margin-left: 5px;
+}
 </style>

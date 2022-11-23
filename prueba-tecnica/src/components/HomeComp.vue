@@ -1,31 +1,32 @@
 <template>
-  <v-container>
-    <v-row >
-      <v-col md="6" sm="12">
-        <h1>
+  <div class="conatiner home">
+    <div class="columns is-5 is-multiline ">
+      <div class="column is-half box mb">
+        <h1 class="title is-1">
           Build Applications Faster
         </h1>
-        <div>
+        <div class="txthom">
           <p>
             Hire experts & get your job done. The right IT security
             solutions. Protect your clients and computer systems from
             hackers and fight against malware.
           </p>
         </div>
-
-        <p className="col">
+        <p>
           Follow as low as $0.95 per user
           account
         </p>
-        <v-btn color="rgb(138, 43, 226)" elevation="3" large rounded class="ma-2"> <span class="btnText">Watch Demo</span>  </v-btn>
-        <v-btn color="rgb(138, 43, 226)" elevation="3" large rounded class="ma-2"> <span class="btnText">Start Now</span>  </v-btn>
-
-      </v-col>
-      <v-col md="6" sm="12">
-        <h1>Credit Calculator Example</h1>
-      </v-col>
-    </v-row>
-  </v-container>
+        <div class="buttons bt">
+          <b-button  type="is-primary"><span class="btnText">Watch Demo</span></b-button>
+          <b-button type="is-primary"><span class="btnText">Start Now</span></b-button>
+        </div>
+       
+      </div>
+      <div class="column is-half ">
+        <h1 class="title is-1">Credit Calculator Example</h1>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -35,3 +36,20 @@
   
       
 </script>
+
+<style scoped>
+.txthom{
+  margin-top: 20px;
+}
+.bt{
+  margin-top: 20px ;
+}
+.mb{
+  margin: 0;
+}
+.home{
+  margin-bottom: 5%;
+  margin-top: 5%;
+
+}
+</style>
